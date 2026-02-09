@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Curriculum_Vitae>
-    
+    <datuPertsonalak>
+        <izena></izena>
+        <abizena></abizena>
+        <korreoa></korreoa>
+        <telefonoa></telefonoa>
+    </datuPertsonalak>
+
+    <formakuntza>
+        <ikasketak>
+            <titulua></titulua>
+            <zentroa></zentroa>
+            <urtea></urtea>
+        </ikasketak>
+    </formakuntza>
+
+    <Lan-experientzia>
+        <trabajo>
+            <puesto></puesto>
+            <empresa></empresa>
+            <duracion></duracion>
+        </trabajo>
+    </experiencia>
+
+    <gaitasunak>
+        <gaitasuna></gaitasuna>
+        <gaitasuna></gaitasuna>
+        <gaitasuna></gaitasuna>
+    </gaitasunak>
 </Curriculum_Vitae>
