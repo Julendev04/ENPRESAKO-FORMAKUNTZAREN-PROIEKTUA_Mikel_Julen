@@ -16,11 +16,11 @@
     </formakuntza>
 
     <Lan-experientzia>
-        <trabajo>
-            <puesto></puesto>
-            <empresa></empresa>
-            <duracion></duracion>
-        </trabajo>
+        <lana>
+            <postua></postua>
+            <enpresa></enpresa>
+            <lan-iraupena></lan-iraupena>
+        </lana>
     </experiencia>
 
     <gaitasunak>
