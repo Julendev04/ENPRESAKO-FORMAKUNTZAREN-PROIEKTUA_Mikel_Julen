@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Curriculum_Vitae>
     <datuPertsonalak>
-        <izena></izena>
-        <abizena></abizena>
-        <korreoa></korreoa>
-        <telefonoa></telefonoa>
+        <izena>Mikel</izena>
+        <abizena>Sanchez</abizena>
+        <korreoa>mikelsan2006@gmail.com</korreoa>
+        <telefonoa>626817204</telefonoa>
     </datuPertsonalak>
 
     <formakuntza>
         <ikasketak>
-            <titulua></titulua>
-            <zentroa></zentroa>
-            <urtea></urtea>
+            <titulua>Bachillergoa</titulua>
+            <zentroa>CIFP Ciudad Jardin</zentroa>
+            <urtea>2006</urtea>
         </ikasketak>
     </formakuntza>
 
     <Lan-experientzia>
         <lana>
-            <postua></postua>
-            <enpresa></enpresa>
-            <lan-iraupena></lan-iraupena>
+            <postua>Informatikaria</postua>
+            <enpresa>SIMA</enpresa>
+            <lan-iraupena>3 urte</lan-iraupena>
         </lana>
     </experiencia>
 
     <gaitasunak>
-        <gaitasuna></gaitasuna>
-        <gaitasuna></gaitasuna>
-        <gaitasuna></gaitasuna>
+        <gaitasuna>Ingelesa C2</gaitasuna>
+        <gaitasuna>Txino mandarin 秃顶的阿尔维斯</gaitasuna>
+        <gaitasuna>Alemaniera C2</gaitasuna>
     </gaitasunak>
 </Curriculum_Vitae>
