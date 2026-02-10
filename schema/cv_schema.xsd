@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Curriculum_Vitae">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datuPertsonalak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="izena" />
+                            <xs:element name="abizena" />
+                            <xs:element name="korreoa" />
+                            <xs:element name="telefonoa" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="formakuntza">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ikasketak">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulua" />
+                                        <xs:element name="zentroa" />
+                                        <xs:element name="urtea" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Lan-experientzia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lana">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="postua" />
+                                        <xs:element name="enpresa" />
+                                        <xs:element name="lan-iraupena" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="gaitasunak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="gaitasuna" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
