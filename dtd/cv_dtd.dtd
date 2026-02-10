@@ -1,0 +1,22 @@
+<!ELEMENT Curriculum_Vitae (datuPertsonalak, formakuntza, Lan-experientzia, gaitasunak)>
+
+<!ELEMENT datuPertsonalak (izena, abizena, korreoa, telefonoa)>
+<!ELEMENT izena (#PCDATA)>
+<!ELEMENT abizena (#PCDATA)>
+<!ELEMENT korreoa (#PCDATA)>
+<!ELEMENT telefonoa (#PCDATA)>
+
+<!ELEMENT formakuntza (ikasketak)>
+<!ELEMENT ikasketak (titulua, zentroa, urtea)>
+<!ELEMENT titulua (#PCDATA)>
+<!ELEMENT zentroa (#PCDATA)>
+<!ELEMENT urtea (#PCDATA)>
+
+<!ELEMENT Lan-experientzia (lana)>
+<!ELEMENT lana (postua, enpresa, lan-iraupena)>
+<!ELEMENT postua (#PCDATA)>
+<!ELEMENT enpresa (#PCDATA)>
+<!ELEMENT lan-iraupena (#PCDATA)>
+
+<!ELEMENT gaitasunak (gaitasuna+)>
+<!ELEMENT gaitasuna (#PCDATA)>
