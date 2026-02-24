@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+<Curriculum_Vitae>
+    <datuPertsonalak>
+        <izena>Julen</izena>
+        <abizena>Ruiz De Viñaspre</abizena>
+        <korreoa>julenr.creatives@gmail.com</korreoa>
+        <telefonoa>645155956</telefonoa>
+    </datuPertsonalak>
+    
+    <formakuntza>
+        <ikasketak kodea="ik1" mota="ziurtagiria">
+            <titulua>Inprimatutako eta multimedia argitalpenen diseinua eta edizioa</titulua>
+            <zentroa>CIFP Mendizabala LHII</zentroa>
+            <urtea>2024</urtea>
+        </ikasketak>
+    </formakuntza>
+    
+    <Lan-experientzia>
+        <lana mota="praktikak" erlazionatutakoIkasketa="ik1">
+            <postua>Diseñatzaile grafikoa eta web arduraduna</postua>
+            <enpresa>RTO Publicidad</enpresa>
+            <lan-iraupena>4 hilabeteko praktikak</lan-iraupena>
+        </lana>
+    </Lan-experientzia>
+    
+    <gaitasunak>
+        <gaitasuna mota="softwarea" maila="aurreratua">Adobe Photoshop, Indesign, Illustrator eta Figma</gaitasuna>
+        <gaitasuna mota="programazioa" maila="ertaina">HTML, CSS, SQL, XML</gaitasuna>
+        <gaitasuna mota="diseinua" maila="aurreratua">UI/UX, diseinu ekologikoa</gaitasuna>
+    </gaitasunak>
+</Curriculum_Vitae>
