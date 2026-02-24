@@ -6,10 +6,10 @@
                 <xs:element name="datuPertsonalak">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="izena" />
-                            <xs:element name="abizena" />
-                            <xs:element name="korreoa" />
-                            <xs:element name="telefonoa" />
+                            <xs:element name="izena" type="xs:string" />
+                            <xs:element name="abizena" type="xs:string" />
+                            <xs:element name="korreoa" type="xs:string" />
+                            <xs:element name="telefonoa" type="xs:string" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -19,10 +19,12 @@
                             <xs:element name="ikasketak">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="titulua" />
-                                        <xs:element name="zentroa" />
-                                        <xs:element name="urtea" />
+                                        <xs:element name="titulua" type="xs:string" />
+                                        <xs:element name="zentroa" type="xs:string" />
+                                        <xs:element name="urtea" type="xs:string" />
                                     </xs:sequence>
+                                    <xs:attribute name="kodea" use="required" />
+                                    <xs:attribute name="mota" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -34,10 +36,12 @@
                             <xs:element name="lana">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="postua" />
-                                        <xs:element name="enpresa" />
-                                        <xs:element name="lan-iraupena" />
+                                        <xs:element name="postua" type="xs:string" />
+                                        <xs:element name="enpresa" type="xs:string" />
+                                        <xs:element name="lan-iraupena" type="xs:string" />
                                     </xs:sequence>
+                                    <xs:attribute name="mota" use="required" />
+                                    <xs:attribute name="erlazionatutakoIkasketa" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -46,7 +50,16 @@
                 <xs:element name="gaitasunak">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="gaitasuna" maxOccurs="unbounded" />
+                            <xs:element name="gaitasuna" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="mota" use="required" />
+                                            <xs:attribute name="maila" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
