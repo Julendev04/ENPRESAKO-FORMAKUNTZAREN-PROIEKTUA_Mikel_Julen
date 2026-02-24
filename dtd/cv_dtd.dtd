@@ -1,22 +1,33 @@
-<!ELEMENT Curriculum_Vitae (datuPertsonalak, formakuntza, Lan-experientzia, gaitasunak)>
+<?xml version="1.0" encoding="UTF-8"?>
 
+<!ELEMENT Curriculum_Vitae (datuPertsonalak, formakuntza, Lan-experientzia, gaitasunak)>
 <!ELEMENT datuPertsonalak (izena, abizena, korreoa, telefonoa)>
 <!ELEMENT izena (#PCDATA)>
 <!ELEMENT abizena (#PCDATA)>
 <!ELEMENT korreoa (#PCDATA)>
 <!ELEMENT telefonoa (#PCDATA)>
 
-<!ELEMENT formakuntza (ikasketak)>
+<!ELEMENT formakuntza (ikasketak+)>
 <!ELEMENT ikasketak (titulua, zentroa, urtea)>
 <!ELEMENT titulua (#PCDATA)>
 <!ELEMENT zentroa (#PCDATA)>
 <!ELEMENT urtea (#PCDATA)>
-
-<!ELEMENT Lan-experientzia (lana)>
+<!ATTLIST ikasketak
+    kodea ID #REQUIRED
+    mota (gradua | masterra | ziurtagiria | bestelakoa) "bestelakoa"
+>
+<!ELEMENT Lan-experientzia (lana+)>
 <!ELEMENT lana (postua, enpresa, lan-iraupena)>
 <!ELEMENT postua (#PCDATA)>
 <!ELEMENT enpresa (#PCDATA)>
 <!ELEMENT lan-iraupena (#PCDATA)>
-
+<!ATTLIST lana
+    mota (praktikak | kontratua | autonomoa | freelance) #REQUIRED
+    erlazionatutakoIkasketa IDREF #IMPLIED
+>
 <!ELEMENT gaitasunak (gaitasuna+)>
 <!ELEMENT gaitasuna (#PCDATA)>
+<!ATTLIST gaitasuna
+    maila (oinarrizkoa | ertaina | aurreratua | aditua) "ertaina"
+    mota (softwarea | programazioa | diseinua | bestelakoa) #REQUIRED
+>
